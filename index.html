@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#f7c9d5" />
+  <title>Nala | Contacto</title>
+  <meta name="description" content="Ficha de contacto de Nala." />
+  <style>
+    :root{--pink:#d45b7a;--rose:#f7c9d5;--cream:#fff9f4;--ink:#3d3337;--muted:#75676d}
+    *{box-sizing:border-box}
+    body{margin:0;min-height:100vh;font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;background:linear-gradient(180deg,#fff7f9,#fffaf5);color:var(--ink);display:grid;place-items:center;padding:20px}
+    .card{width:min(100%,440px);background:white;border-radius:28px;box-shadow:0 16px 45px rgba(78,45,58,.14);overflow:hidden;border:1px solid #f5e4e9}
+    .hero{padding:24px 24px 10px;text-align:center;background:radial-gradient(circle at top,#fff 0,#fff8fa 65%,#fff 100%)}
+    .hero img{width:185px;height:185px;object-fit:cover;object-position:50% 18%;border-radius:50%;border:8px solid white;box-shadow:0 8px 24px rgba(101,62,76,.18)}
+    h1{margin:12px 0 2px;font-size:42px;letter-spacing:.09em;color:var(--pink)}
+    .tag{margin:0;color:var(--muted);font-size:17px}
+    .content{padding:18px 24px 26px}
+    .message{text-align:center;font-size:18px;line-height:1.45;margin:0 0 18px}
+    .info{display:grid;gap:10px;margin:18px 0}
+    .row{display:flex;gap:12px;align-items:flex-start;padding:12px 14px;background:var(--cream);border-radius:16px}
+    .icon{font-size:22px;line-height:1}
+    .label{display:block;font-size:12px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin-bottom:2px}
+    .value{font-size:16px;font-weight:650}
+    .actions{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:18px}
+    .btn{display:flex;justify-content:center;align-items:center;gap:8px;text-decoration:none;padding:14px 12px;border-radius:16px;font-weight:750;font-size:16px}
+    .call{background:var(--pink);color:white}
+    .wa{background:#edf8ef;color:#235d34;border:1px solid #d6eddc}
+    .thanks{text-align:center;color:var(--muted);font-size:14px;margin:18px 0 0}
+    @media(max-width:360px){.actions{grid-template-columns:1fr}.hero img{width:160px;height:160px}h1{font-size:36px}}
+  </style>
+</head>
+<body>
+  <main class="card">
+    <section class="hero">
+      <img src="nala.png" alt="Ilustración de Nala" />
+      <h1>NALA</h1>
+      <p class="tag">Palermo, CABA 🐾</p>
+    </section>
+    <section class="content">
+      <p class="message"><strong>¡Hola! Soy Nala.</strong><br>Si me encontraste, por favor llamá o escribile a mi familia.</p>
+      <div class="info">
+        <div class="row"><span class="icon">👤</span><div><span class="label">Mi humana</span><span class="value">Camila</span></div></div>
+        <div class="row"><span class="icon">📍</span><div><span class="label">Zona donde vivo</span><span class="value">Palermo, CABA</span></div></div>
+        <div class="row"><span class="icon">💊</span><div><span class="label">Alergias o medicación</span><span class="value">No tengo</span></div></div>
+      </div>
+      <div class="actions">
+        <a class="btn call" href="tel:+5491162718373">📞 Llamar</a>
+        <a class="btn wa" href="https://wa.me/5491162718373?text=Hola%20Camila%2C%20encontr%C3%A9%20a%20Nala." target="_blank" rel="noopener">💬 WhatsApp</a>
+      </div>
+      <p class="thanks">❤️ Muchas gracias por ayudarme a volver a casa.</p>
+    </section>
+  </main>
+</body>
+</html>
